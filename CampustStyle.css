@@ -1,0 +1,71 @@
+html {
+    font-size: clamp(1px, 1dvh, 1000px);
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+}
+
+#outApp {
+    height: 100dvh;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#outApp * {
+    border: 1px solid black;
+}
+
+#mainApp {
+    position: absolute;
+
+    width: 100%;
+    height: 100dvh;
+    
+    background-color: rgb(172, 228, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+#underApp {
+    align-items: center;
+
+    position: fixed;
+    top: 90dvh;
+    
+    width: 100%;
+    height: 10dvh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gainsboro;
+}
+
+#underApp button {
+    font-size: 1.5rem;
+    height: 100%;
+    margin: 0;
+}
+
+.worldBorder {
+    height: 100dvh;
+
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+#worldBorderLeft {
+    left: 0;
+}
+
+#worldBorderRight {
+    right: 0;
+}
