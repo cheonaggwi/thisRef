@@ -36,7 +36,11 @@ document.querySelector('#button_2_1').addEventListener('click',()=>{
 // 밑 버튼 클릭 시 화면 전환
 
 document.querySelector('#button_4_1').addEventListener('click',()=>{
-    window.location.assign('index.html')
+    window.location.assign('home.html')
+})
+
+document.querySelector('#button_4_2').addEventListener('click',()=>{
+    window.location.assign('campus.html')
 })
 document.querySelector('#button_4_3').addEventListener('click',()=>{
     window.location.assign('data.html')

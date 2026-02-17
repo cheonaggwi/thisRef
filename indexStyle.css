@@ -1,0 +1,72 @@
+html {
+    font-size: clamp(1px, 1dvh, 1000px);
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+}
+
+#outApp {
+    height: 100dvh;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* #outApp * {
+    border: 1px solid black;
+} */
+
+#mainApp {
+    position: absolute;
+
+    width: 100%;
+    height: 100dvh;
+    
+    background-color: rgb(0, 155, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s ease;
+    
+    align-items: center;
+}
+
+#logo img{
+    width: 45rem;
+}
+
+#helloText{
+    font-size: 3rem;
+    color: white;
+    font-weight:200;
+    text-align: center;
+    padding-top: 4rem;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#helloText span{
+    font-size: 3.5rem;
+    font-weight:400;   
+}
+
+.worldBorder {
+    height: 100dvh;
+
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+#worldBorderLeft {
+    left: 0;
+}
+
+#worldBorderRight {
+    right: 0;
+}

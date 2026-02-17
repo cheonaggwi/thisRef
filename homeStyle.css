@@ -41,7 +41,27 @@ body{
     justify-content: space-between;
     align-items: center;
     
-    padding: 7%;
+    padding: 5%;
+    padding-bottom: 3%;
+    padding-top: 10%;
+}
+
+#logoImage {
+    width: 16rem;
+}
+
+#optionButton {
+    background-color: transparent;
+    border: none;
+}
+
+#optionButton:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#optionImage {
+    width: 3rem;
 }
 
 #hiMessage {
@@ -124,12 +144,16 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: gainsboro;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
 }
 
 #underApp button {
     font-size: 1.5rem;
     height: 100%;
     margin: 0;
+    border: none;
+    background-color: white;
+    
 }
 
 .buttonApp {

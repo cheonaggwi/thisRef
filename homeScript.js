@@ -56,6 +56,10 @@ document.querySelector('#optionBackground').addEventListener('click', function()
 
 // 밑 버튼 클릭 시 화면 전환
 
+document.querySelector('#button_4_1').addEventListener('click',()=>{
+    window.location.assign('home.html')
+})
+
 document.querySelector('#button_4_2').addEventListener('click',()=>{
     window.location.assign('campus.html')
 })

@@ -1,28 +1,22 @@
-// 밑 버튼 클릭 시 화면 전환
-
-document.querySelector('#button_4_1').addEventListener('click',()=>{
-    window.location.assign('home.html')
-})
-
-document.querySelector('#button_4_2').addEventListener('click',()=>{
-    window.location.assign('campus.html')
-})
-document.querySelector('#button_4_3').addEventListener('click',()=>{
-    window.location.assign('data.html')
-})
-
-
-
 // 화면 비율 정리
 
 document.querySelector("#outApp").style.width = parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('height'))/35*18+'px';
-document.querySelector("#underApp").style.width = parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('height'))/35*18+'px';
 document.querySelector("#worldBorderLeft").style.width = (parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('width'))-parseFloat(document.querySelector("#outApp").style.width))/2+'px';
 document.querySelector("#worldBorderRight").style.width = (parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('width'))-parseFloat(document.querySelector("#outApp").style.width))/2+'px';
 
 window.addEventListener('resize', function() {
     document.querySelector("#outApp").style.width = parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('height'))/35*18+'px';
-    document.querySelector("#underApp").style.width = parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('height'))/35*18+'px';
     document.querySelector("#worldBorderLeft").style.width = (parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('width'))-parseFloat(document.querySelector("#outApp").style.width))/2+'px';
     document.querySelector("#worldBorderRight").style.width = (parseFloat(window.getComputedStyle(document.querySelector('body')).getPropertyValue('width'))-parseFloat(document.querySelector("#outApp").style.width))/2+'px';
 })
+
+setTimeout(()=>{
+    document.querySelector('#helloText').style.opacity = 1;
+    document.querySelector('#mainApp').style.backgroundColor = "rgb(29, 165, 255)";
+    setTimeout(()=>{
+        document.querySelector('#mainApp').style.backgroundColor = "rgb(0, 155, 255)";
+    },200)
+    setTimeout(()=>{
+        window.location.assign('home.html')
+    },1300)
+},1300)
