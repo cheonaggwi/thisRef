@@ -1,39 +1,6 @@
-html {
-    font-size: clamp(1px, 1dvh, 1000px);
-}
-
-body{
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin: 0;
-}
-
-#outApp {
-    height: 100dvh;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
 /* #outApp * {
     border: 1px solid black;
 } */
-
-#mainApp {
-    position: absolute;
-
-    width: 100%;
-    height: 100dvh;
-    
-    background-color: rgb(245, 245, 250);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 0.2s ease;
-}
 
 #message {
     flex: 1;
@@ -94,55 +61,11 @@ body{
 
     width: 100%;
     height: 90dvh;
+    background-color: rgb(255, 255, 255);
 }
 
-#button_1_1_App {
-    background-color: rosybrown;
-}
-
-#button_1_2_App {
-    background-color: rgb(143, 188, 177);
-}
-
-#button_2_2_App {
-    background-color: royalblue;
-}
-
-#underApp {
-    align-items: center;
-
-    position: fixed;
-    top: 90dvh;
-    
-    width: 100%;
-    height: 10dvh;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: gainsboro;
-    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
-}
-
-#underApp button {
-    font-size: 1.5rem;
-    height: 100%;
-    margin: 0;
+.buttonApp button {
+    background-color: transparent;
     border: none;
-    background-color: white;
-    
-}
-
-.worldBorder {
-    height: 100dvh;
-
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-}
-
-#worldBorderLeft {
-    left: 0;
-}
-
-#worldBorderRight {
-    right: 0;
+    transform: translateX(2rem) translateY(2rem);
 }
